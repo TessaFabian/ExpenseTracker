@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="1150.0" prefWidth="1731.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.expensetracker.ExpenseTrackerController">
+   <children>
+      <VBox fillWidth="false" layoutY="-3.0" prefHeight="1154.0" prefWidth="431.0" style="-fx-background-color: b3e0ff;" stylesheets="@sidePanel.css">
+         <children>
+            <Label prefHeight="68.0" prefWidth="431.0" />
+            <Button fx:id="btnAddCash" defaultButton="true" mnemonicParsing="false" prefHeight="95.0" prefWidth="431.0" styleClass="sidePanelButton" text="Einkommen hinzufügen">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView id="dollarImage" blendMode="ADD" fitHeight="75.0" fitWidth="80.0" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@dollar.jpg" />
+                     </image>
+                     <effect>
+                        <Blend opacity="0.52" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label prefHeight="18.0" prefWidth="431.0" />
+            <Button fx:id="btnEvaluation" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="95.0" prefWidth="431.0" styleClass="sidePanelButton" text="Auswertung ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView id="dollarImage" blendMode="ADD" fitHeight="75.0" fitWidth="80.0" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <Blend opacity="0.52" />
+                     </effect>
+                     <image>
+                        <Image url="@dollar.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label prefHeight="18.0" prefWidth="431.0" />
+            <Button fx:id="btnEvaluation1" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="431.0" styleClass="sidePanelButton" text="Spartöpfe">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView id="dollarImage" blendMode="ADD" fitHeight="75.0" fitWidth="80.0" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <Blend opacity="0.52" />
+                     </effect>
+                     <image>
+                        <Image url="@dollar.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label prefHeight="21.0" prefWidth="431.0" />
+            <Button fx:id="btnEvaluation11" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="431.0" styleClass="sidePanelButton" text="Budgets bearbeiten">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView id="dollarImage" blendMode="ADD" fitHeight="75.0" fitWidth="80.0" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <Blend opacity="0.52" />
+                     </effect>
+                     <image>
+                        <Image url="@dollar.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnEvaluation111" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="431.0" styleClass="sidePanelButton" text="Fixkosten">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView id="dollarImage" blendMode="ADD" fitHeight="75.0" fitWidth="80.0" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <Blend opacity="0.52" />
+                     </effect>
+                     <image>
+                        <Image url="@dollar.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label prefHeight="21.0" prefWidth="431.0" />
+         </children>
+      </VBox>
+      <VBox id="mainPanel" layoutX="431.0" prefHeight="1151.0" prefWidth="1299.0" stylesheets="@mainPanel.css">
+         <children>
+            <HBox prefHeight="320.0" prefWidth="1299.0">
+               <children>
+                  <VBox prefHeight="320.0" prefWidth="226.0">
+                     <children>
+                        <Label contentDisplay="BOTTOM" prefHeight="42.0" prefWidth="226.0" styleClass="textLabel" text="               Girokonto" textAlignment="CENTER" textOverrun="CLIP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giroLabel" prefHeight="65.0" prefWidth="228.0" styleClass="moneyLabel" text="12345">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="BOTTOM" prefHeight="42.0" prefWidth="226.0" styleClass="textLabel" text="               Tagesgeld" textAlignment="CENTER" textOverrun="CLIP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giroLabel1" prefHeight="65.0" prefWidth="228.0" styleClass="moneyLabel" text="12345">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="BOTTOM" prefHeight="42.0" prefWidth="226.0" styleClass="textLabel" text="               TradeRepublic" textAlignment="CENTER" textOverrun="CLIP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giroLabel11" prefHeight="65.0" prefWidth="228.0" styleClass="moneyLabel" text="12345">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

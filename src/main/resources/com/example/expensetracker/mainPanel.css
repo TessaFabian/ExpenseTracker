@@ -1,0 +1,12 @@
+#mainPanel {
+-fx-background-color: #F5F5F5;
+}
+
+.textLabel {
+-fx-text-alignment: center;
+}
+
+.moneyLabel {
+-fx-background-color: #00e64d;
+}
+
