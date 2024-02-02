@@ -26,7 +26,11 @@ public class EinkommenViewController {
 
     @FXML
     private void processOKButton(ActionEvent event) {
-
+        //Lade eingegebene Daten in die Tabelle
+        //Schreibe Daten in Datenbank
+        //Schließe Fenster
+        Stage stage = (Stage) btnAbbr.getScene().getWindow();
+        stage.close();
     }
 
     @FXML
