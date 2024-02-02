@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.expensetracker.ExpenseTrackerController">
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.expensetracker.ExpenseTrackerController">
    <children>
       <GridPane AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
          <columnConstraints>
@@ -38,7 +41,7 @@
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
                               <Label prefHeight="69.0" prefWidth="100.0" />
-                              <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="100.0" text="Neu" />
+                              <Button fx:id="btnNeuEinkommen" mnemonicParsing="false" onAction="#processNeuButton" prefHeight="38.0" prefWidth="100.0" text="Neu" />
                               <Label prefHeight="69.0" prefWidth="100.0" />
                               <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="100.0" text="Bearbeiten" />
                               <Label prefHeight="69.0" prefWidth="100.0" />
